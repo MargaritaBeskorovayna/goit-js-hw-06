@@ -9,7 +9,10 @@ const {
   if(!email.value || !password.value){
     return alert("Всі поля повинні бути заповнені!")
 }
-console.log({email:email.value,password:password.value})
+const obj = {email:email.value,
+           password:password.value
+          }
+console.log(obj)
 event.currentTarget.reset();
 }
 
